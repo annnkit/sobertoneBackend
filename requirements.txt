@@ -14,4 +14,4 @@ pydantic-settings
 asyncpg
 email-validator
 openai
-pinecone-client
+pinecone
