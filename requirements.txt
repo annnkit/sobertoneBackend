@@ -11,3 +11,7 @@ python-jose
 passlib[bcrypt]
 httpx
 pydantic-settings
+asyncpg
+email-validator
+openai
+pinecone
