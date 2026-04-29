@@ -9,7 +9,7 @@ sqlalchemy
 psycopg2-binary
 python-jose
 passlib[bcrypt]==1.7.4
-bcrypt==4.0.1httpx
+bcrypt==4.0.1
 pydantic-settings
 asyncpg
 email-validator
