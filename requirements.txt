@@ -13,3 +13,4 @@ httpx
 pydantic-settings
 asyncpg
 email-validator
+openai
