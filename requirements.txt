@@ -12,3 +12,4 @@ passlib[bcrypt]
 httpx
 pydantic-settings
 asyncpg
+pydantic[email]
