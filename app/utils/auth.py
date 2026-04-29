@@ -19,8 +19,7 @@ bearer_scheme = HTTPBearer()
 import hashlib
 
 def hash_password(password: str):
-    # Convert long password into fixed-length hash
-    hashed = hashlib.sha256(password.encode()).hexdigest()
+    hashed = hashlib.sha256(password.encode("utf-8")).hexdigest()
     return pwd_context.hash(hashed)
 
 
@@ -28,7 +27,7 @@ def hash_password(password: str):
 #     return pwd_context.verify(plain, hashed)
 
 def verify_password(plain: str, hashed: str) -> bool:
-    hashed_input = hashlib.sha256(plain.encode()).hexdigest()
+    hashed_input = hashlib.sha256(plain.encode("utf-8")).hexdigest()
     return pwd_context.verify(hashed_input, hashed)
 
 
